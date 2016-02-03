@@ -1,6 +1,6 @@
 from datetime import datetime
 from time import sleep
-from twctattler.pinger import twctattler
+from twctattler.tattler import twctattler
 import sys
 
 def app():
