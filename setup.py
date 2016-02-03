@@ -6,6 +6,7 @@ setup(name='twc-tattler',
         author='Michael J Gorman',
         author_email='michael@michaeljgorman.com',
         url='tbd',
+        test_suite='twctattler.tests.test_twctattler',
         install_requires=[
             'ping',
             'sendgrid',
