@@ -5,6 +5,14 @@ Monitor for keeping an eye on timewarner
 
 # Setup
 setup.py included for install and dependency management.
+create a .sendgrid file in your user's homedir:
+```
+{
+"api-key": "YOURAPIKEY",
+"email-to": "to email",
+"email-from": "from email"
+}
+```
 
 # Usage
 The two installed scripts idealy would be run via a daemon managemnt such as supervisord. Could also run via cron if you want it less frequently.
