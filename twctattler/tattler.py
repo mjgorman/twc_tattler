@@ -34,7 +34,7 @@ class twctattler:
         failures = [date for tar,date,res,resp in self.get_stats() if not bool(res)]
         success_rate = len([res for tar,date,res,resp in self.get_stats() if bool(res)])
         output = ("Failures: {0}".format(failures),
-                "Success: {0}% of {1} checks".format((success_rate/len(stats))*100,len(stats)))
+                "Success: {0}% of {1} checks".format((float(success_rate)/float(len(stats)))*100,len(stats)))
         return output
 
 
